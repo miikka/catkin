@@ -1,8 +1,9 @@
 #
 # Search all subfolders in the workspace for ``package.xml`` files.
-# Based on the dependencies specified in the ``build_depends`` and
-# ``buildtool_depends`` tags it performs a topological sort and calls
-# ``add_subdirectory()`` for each directory.
+# Based on the dependencies specified in the ``build_depends``,
+# ``buildtool_depends`` and ``test_depends`` tags it performs a
+# topological sort and calls ``add_subdirectory()`` for each
+# directory.
 #
 # The functions is only called in catkin's ``toplevel.cmake``, which
 # is usually symlinked to the workspace root directory (which
